@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body style="background-color:#21aabd;">
+  <center>
+    <hr>
+    <h3>Iscrizione al portale</h3>
+    <hr>
+    <form action="" method="get" data-ng-app="">
+        <p><input type="text" name="cognome" placeholder="Inserisci cognome" required data-ng-model="cognome"></p>
+        <p><input type="text" name="nome" placeholder="Inserisci nome" required data-ng-model="nome"></p>
+        <p><input type="email" name="email" placeholder="Inserisci email" required data-ng-model="email"></p>
+        <p><input type="text" name="cell" placeholder="Inserisci numero di cellulare" required maxlength="10" data-ng-model="cell"></p>
+        <hr>
+        <h3>Riepilogo dati</h3>
+        <p>Cognome: {{cognome}}</p>
+        <p>Nome: {{nome}}</p>
+        <p>Email: {{email}}</p>
+        <p>Cellulare: {{cell}}</p>
+        <hr>
+        <h4>Dopo aver controllato il riepilogo, invia i dati</h4>
+        <p>
+          <input type="submit" name="submit" value="Invia">
+          <input type="reset" value="Annulla">
+        </p>
+      <hr>
+    </form>
+  </center>
+</body>
+</html>
